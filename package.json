@@ -7,6 +7,7 @@
     "build": "blitz build",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "test": "jest",
+    "example:task": "ts-node --project=tsconfig.json -O '{\"module\":\"commonjs\"}' tasks/example.ts",
     "test:watch": "jest --watch"
   },
   "browserslist": [
@@ -59,12 +60,13 @@
     "jest": "26.4.2",
     "jest-environment-jsdom-fourteen": "1.0.1",
     "jest-watch-typeahead": "0.6.0",
-    "react-test-renderer": "16.13.1",
     "lint-staged": "10.2.13",
     "prettier": "2.1.1",
     "pretty-quick": "2.0.2",
-    "typescript": "3.9.7",
-    "ts-jest": "26.3.0"
+    "react-test-renderer": "16.13.1",
+    "ts-jest": "26.3.0",
+    "ts-node": "9.0.0",
+    "typescript": "3.9.7"
   },
   "private": true
 }
